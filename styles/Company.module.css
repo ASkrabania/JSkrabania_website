@@ -1,0 +1,19 @@
+
+
+.biuro_zew {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8rem;
+}
+
+.biuro {
+    object-fit: scale;
+    
+}
+
+@media (min-width: 640px) {
+    .biuro{
+        object-fit: scale-down;
+    }
+}

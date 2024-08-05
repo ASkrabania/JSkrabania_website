@@ -48,10 +48,10 @@
   align-items: center; 
   padding: 10px 20px;
   border-radius: 200px;
-  transition: 300ms;
+  transition: background-color 300ms;
 }
 .li:hover {
-  background-color: #fff;
+  background-color: #f1f1ecb4;
 }
 
 .link {

@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 8rem;
+    padding-top: 4rem;
 }
 
 .biuro {
@@ -16,4 +16,50 @@
     .biuro{
         object-fit: scale-down;
     }
+}
+
+.grid1 {
+    box-sizing: border-box;
+    display: grid;
+    justify-content: space-around;
+    align-items: start;
+    padding: 1rem 4rem;
+    height: 30vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 1.5fr 1fr;
+    grid-template-areas: 
+    "text1 obraz"
+    "text2 obraz"
+    "kontakt2 obraz";
+}
+
+.text1 {
+    grid-area: text1;
+    width:200px;
+    
+}
+
+.text2 {
+    grid-area: text2;
+}
+
+.kontakt2 {
+    grid-area: kontakt2;
+    padding: 0.75rem 1.75rem;
+    border-radius: 200px;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: #aeaea1;
+    background-color: #273e31; 
+}
+
+.obraz {
+    /* grid-area: obraz; */
+    /* scale: 0.6; */
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

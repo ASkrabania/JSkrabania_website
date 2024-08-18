@@ -1,96 +1,89 @@
 
 
-.biuro_zew {
+.nazwa {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 3rem;
+    text-align: center; 
+    font-size: 2rem;
     padding-bottom: 2rem;
+    flex-shrink: 1;
 }
 
-.biuro {
-    object-fit: scale;
-    
-}
 
-@media (min-width: 640px) {
-    .biuro{
-        object-fit: scale-down;
-    }
-}
+
 
 .hero {
+    /* padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: center; */
     display: flex;
-    align-items: center;
-    border-radius: 8px;
-    padding: 20px 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    height: 420px;
+    padding: 0 2rem;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    border: solid red;
 }
 .info {
-    margin-right: 20px;
-}
-
-.obraz {
-    background-color: black;
-    width: 600px;
-    height: 200px;
-    border-radius: 8px;
-}
-
-/* .grid1 {
-    box-sizing: border-box;
-    display: grid;
-    justify-content: space-around;
-    align-items: start;
-    padding: 1rem rem;
-    height: 30vh;
-    row-gap: 10px;
-    column-gap: 50px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.5fr 1.5fr 1fr;
-    grid-template-areas: 
-    "text1 obraz"
-    "text2 obraz"
-    "kontakt2 obraz";
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
 }
 
 .text1 {
-    grid-area: text1;
-    font-size: large;
-    
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
 }
-
 .text2 {
-    grid-area: text2;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
-
-.kontakt2 {
-    grid-area: kontakt2;
-    padding: 0.75rem 1.75rem;
-    border-radius: 200px;
-    justify-content: flex-start;
+.kontakt2  {
+    display: block;
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+    border-radius: 100px;
     text-decoration: none;
+    width: 96px;
     color: #aeaea1;
     background-color: #273e31; 
 }
 
 .obraz {
-    background-color: aliceblue;
-    grid-column: 2;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    width: 100%;
-    height: 100%;
    
-} */
-/* @media (min-width: 640px) {
-    .grid1 {
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.4fr 0.4fr 1fr;
-        grid-template-areas: 
-        "text1"
-        "text2"
-        "kontant2"
-        "obraz";
+    object-fit: cover;
+    width: 100%;
+    height: 420px;
+    /* max-width: 100%;
+    max-height: 100%; */
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+@media (max-width:884px) {
+    .hero {
+        margin-top: 10px;
+        flex-direction: column;
     }
-} */
+    .info {
+        width: 100%;
+        text-align: center;
+    }
+    .text1 {
+        font-size: 2rem;
+    }
+    .kontakt2 {
+        text-align: center;
+    }
+    .obraz {
+        
+    }
+}
+
+@media (max-width:678px) {
+    .text1 {
+        font-size: 1.5rem;
+    }
+}

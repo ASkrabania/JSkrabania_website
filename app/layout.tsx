@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import './globals.css'
 
 import { Children } from "react";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 

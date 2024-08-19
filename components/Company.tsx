@@ -14,7 +14,7 @@ export default function Company() {
     <section>
         <div className={styles.nazwa}>
             <motion.div>
-              <h1>Biuro Inżynierskie <br /> Jerzy Skrabania</h1>
+              <h1 className={styles.heading}>Biuro Inżynierskie Jerzy Skrabania</h1>
                 {/* <Image 
                 
                 src={biuro}
@@ -36,6 +36,7 @@ export default function Company() {
             </div>
             <div className={styles.obraz}>
               <Image
+              className={styles.img}
                 src={obraz}
                 alt='Biuro'
                 quality="95"
